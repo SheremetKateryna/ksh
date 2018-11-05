@@ -39,25 +39,7 @@ body {
   flex-basis: 100%;
 }
 
-
-
-
-/*
-.flex_item:first-child {
-   flex: 2 0 2em;
-   text-align: right;
-}
-
-.flex_item:nth-child(2) {
-   flex: 0 1 1em;
-   text-align: center;
-
-}
-.flex_item:nth-child(3) {
-   flex: 0.5 1 1em;
-}
-
 .flex_item:last-child {
-   flex: 1 2 auto;
    text-align: right;
-*/
+}
+

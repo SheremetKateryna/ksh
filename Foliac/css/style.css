@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'slim_joeregular';
+    src: url('slimjoe-webfont.woff2') format('woff2'),
+         url('slimjoe-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'big_johnregular';
+    src: url('bigjohn-webfont.woff2') format('woff2'),
+         url('bigjohn-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header {
+   height: 650px;
+   background: url(../img/header-bg.png);
+   position: relative;
+   max-width: 1920px;
+}
+
+.header:before {
+   content: "";
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   background: #3c4950;
+   opacity: .85;
+} 
+
+.header_iner {
+   position: relative;
+   z-index: 1;
+   width: 1140px;
+   padding:36px 0;
+}
+
+.header_menu {
+   font: 16px/1 Lato,sans-serif;
+}
+
+.header_link {
+   color: white;
+   text-decoration: none;
+}
+
+.header_navigator {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.header_iner {
+     margin: 0 auto;
+}
+
+.header_menu {
+  width: 550px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_title {
+  margin: 120px auto 0px auto;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  width: 1140px;
+  margin-bottom: 45px;
+
+}
+
+.header_title_main {
+  font: 46px BigJohn,sans-serif;
+}
+
+.header_title_sub {
+  font: 30px SlimJoe,sans-serif;
+}
+
+.header_button {
+  display: block;
+  text-transform: uppercase;
+  font: 14px/25px Lato,sans-serif;
+  color: #48bf72;
+  border: 2px solid currentColor;
+  border-radius: 3px;
+  background-color: transparent;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+}

@@ -1,0 +1,180 @@
+*, h1 {
+   margin: 0;
+   padding: 0;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensansbold.woff2') format('woff2');
+  src: url('../fonts/opensansbold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+html, 
+body {
+   height:100%;
+}
+
+body {
+   padding: 110px 360px;
+   width: 1140px;
+   height: 100%;
+   background: #fff;
+}
+
+.bordered {
+   border: 1px solid #ffcc00;
+}
+
+
+.header {
+   padding-bottom: 30px;
+   text-align: center;
+   &_subtitle {
+      color:  #898f8f;
+      font: 18px/24px Raleway,sans-serif;
+      font-weight: 500;
+   }
+   &_title {
+      font: 60px/66px Roboto,sans-serif;
+      font-family: Roboto; 
+      color:  #ffcc00;
+      font-weight: 900;
+      margin-top: 10px;
+   }
+}
+
+.top-border {
+   display: flex;
+   justify-content: center;
+   .border {
+      background: #ffcc00;
+      width: 210px;
+      height: 1px;
+   }
+   .icon {
+      margin: 0 7px;
+   }
+}
+
+.main {
+   display: flex;
+   align-items: center;
+   padding: 40px 0;
+   &_arrow {
+      color: #ffcc00;
+      font-size: 40px;
+      padding: 0 40px;
+   }
+   &_card {
+      display: flex;
+      .card_photo {
+         padding: 15px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+           margin: 75px 80px 65px 0;
+           border: 2px solid transparent;
+           border-image: linear-gradient(45deg, #ffcc00, #ffcc00 12.5%, transparent 12.5%, transparent 37.5%, #ffcc00 37.5%, #ffcc00 62.5%, transparent 62.5%, transparent 87.5%, #ffcc00 87.5%, #ffcc00 100%);
+           border-image-slice: 1;
+           .photo {
+            .bordered
+            }
+         }
+         .card_member {
+            border-left: 1px solid #ffcc00;
+            padding-left: 80px;
+            text-align: center;
+            color:  #666;
+            .member_name{
+               font: 35px/24px Roboto,sans-serif;
+               font-weight: 900;
+               position: relative;
+               padding-bottom: 31px;
+               &:before {
+                  content: "";
+                  width: 100px;
+                  height: 1px;
+                  background: #ffcc00;
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  right: 0;
+                  margin: auto;
+               }
+            }
+            .member_position {
+               padding-top: 30px;
+               font: 24px Raleway,sans-serif;
+               font-weight: 400;
+            }
+            .member_socials {
+               display: flex;
+               justify-content: center;
+               padding: 30px 0;
+               color:  #cccccc;
+               font-size: 14px; 
+               .socials {
+                  margin-right: 5px;
+                  border-radius: 50%;
+                  border: 2px solid #ccc;
+                  width: 30px;
+                  height: 30px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  &:hover {
+                     border: 2px solid #666;
+                     color: #666;
+                  }
+               }
+            }
+            .member_description {
+               font: 14px/24px Raleway,sans-serif;
+               color:  #333333;
+               font-weight: 500;
+               padding-bottom: 20px;
+               position: relative;
+               &:before {
+                  content: "";
+                  width: 50px;
+                  height: 4px;
+                  background: linear-gradient(90deg, #ffcc00, #ffcc00 10px, transparent 10px, transparent 15px, #ffcc00 15px, #ffcc00 35px, transparent 35px, transparent 40px, #ffcc00 40px, #ffcc00 50px);
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  right: 0;
+                  margin: auto;
+               }
+            }
+            .member_profile {
+               margin-top: 25px;
+               .button {
+                  background: transparent;
+                  .bordered;
+                  font: 14px/24px OpenSans,sans-serif;
+                  color:  #666;
+                  font-weight: 700;
+                  padding: 0 10px;
+               }
+            }
+         }
+      }
+   }
+
+   .slider {
+      display: flex;
+      justify-content: center;
+      &_dot {
+         height: 15px;
+         width: 15px;
+         border-radius: 50%;
+         margin-right: 10px;
+         background: #ffcc00;
+         .bordered
+      }
+      &_dot:hover {
+         background: transparent;
+      }
+   }

@@ -1,0 +1,21 @@
+.card_photo {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 75px 80px 65px 0;
+  border: 2px solid transparent;
+  -webkit-border-image: -webkit-linear-gradient(45deg, #ffcc00, #ffcc00 12.5%, transparent 12.5%, transparent 37.5%, #ffcc00 37.5%, #ffcc00 62.5%, transparent 62.5%, transparent 87.5%, #ffcc00 87.5%, #ffcc00 100%);
+  -o-border-image: -o-linear-gradient(45deg, #ffcc00, #ffcc00 12.5%, transparent 12.5%, transparent 37.5%, #ffcc00 37.5%, #ffcc00 62.5%, transparent 62.5%, transparent 87.5%, #ffcc00 87.5%, #ffcc00 100%);
+  border-image: linear-gradient(45deg, #ffcc00, #ffcc00 12.5%, transparent 12.5%, transparent 37.5%, #ffcc00 37.5%, #ffcc00 62.5%, transparent 62.5%, transparent 87.5%, #ffcc00 87.5%, #ffcc00 100%);
+  border-image-slice: 1;
+}
+.card_photo .photo {
+  border: 1px solid #ffcc00;
+}

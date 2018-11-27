@@ -1,0 +1,62 @@
+.card_member {
+  border-left: 1px solid #ffcc00;
+  padding-left: 80px;
+  text-align: center;
+  color: #666;
+}
+.card_member .member_name {
+  font: 35px/24px Roboto, sans-serif;
+  font-weight: 900;
+  position: relative;
+  padding-bottom: 31px;
+}
+.card_member .member_name:before {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background: #ffcc00;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.card_member .member_position {
+  padding-top: 30px;
+  font: 24px Raleway, sans-serif;
+  font-weight: 400;
+}
+.card_member .member_socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 30px 0;
+  color: #cccccc;
+  font-size: 14px;
+}
+.card_member .member_description {
+  font: 14px/24px Raleway, sans-serif;
+  color: #333333;
+  font-weight: 500;
+  padding-bottom: 20px;
+  position: relative;
+}
+.card_member .member_description:before {
+  content: "";
+  width: 50px;
+  height: 4px;
+  background: -webkit-linear-gradient(left, #ffcc00, #ffcc00 10px, transparent 10px, transparent 15px, #ffcc00 15px, #ffcc00 35px, transparent 35px, transparent 40px, #ffcc00 40px, #ffcc00 50px);
+  background: -o-linear-gradient(left, #ffcc00, #ffcc00 10px, transparent 10px, transparent 15px, #ffcc00 15px, #ffcc00 35px, transparent 35px, transparent 40px, #ffcc00 40px, #ffcc00 50px);
+  background: linear-gradient(90deg, #ffcc00, #ffcc00 10px, transparent 10px, transparent 15px, #ffcc00 15px, #ffcc00 35px, transparent 35px, transparent 40px, #ffcc00 40px, #ffcc00 50px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.card_member .member_profile {
+  margin-top: 25px;
+}

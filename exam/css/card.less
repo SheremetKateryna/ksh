@@ -1,0 +1,52 @@
+.card {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 230px 0 330px;
+   &_title {
+      text-align: center;
+      font: 700 40px/60px @fontFamily;
+      color: #fff;
+      text-transform: uppercase;
+   }
+   &_subtitle {
+      font: 400 18px/24px @fontFamily;
+      color: #fff;
+      margin: 75px 0 30px;
+      text-transform: uppercase;
+      &_accent {
+         color: #ffc762;
+      } 
+   }
+     &_name {
+      font: 700 36px/1 @fontFamily;
+      color: #fff;
+   }
+   &_form{
+      width: 570px;
+      display: flex;
+      border: none;
+      border-radius: 3px;
+      box-sizing: border-box;
+      &__reception {
+         position:absolute;
+         bottom: 150px;
+      }
+   }
+   &_input {
+      width: calc(100% - 200px);
+      border: 0;
+      font: 14px/60px @fontFamily;
+      color: #000;
+      padding: 0 20px;
+      text-align: center;
+      &::placeholder {
+         color: #a6a6a6;
+      }
+   }
+
+ 
+}
+

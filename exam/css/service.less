@@ -1,0 +1,63 @@
+.service {
+    min-width: @minWidth;
+    padding: 0 @paddingMain;
+    color: @color;
+    &_item{
+        grid-column: span 3;
+        background: #fff;
+        position: relative;
+        &__big {
+            grid-column: span 4;
+        }
+    }
+    &_button {
+        width: 230px;
+        border-radius: 5px;
+        background-color:  #ffd800;
+        border: none;
+        font: 700 13px/1 @fontFamily;
+        color: #150a0c;
+        text-transform: uppercase;
+        padding: 15px 0;
+        position: absolute;
+        top: 170px;
+        left: 50%;
+        margin-left: -115px
+    }
+    &_title {
+        margin: 0;
+        padding: 50px 0 40px ;
+        text-align: center;
+        font: 700 36px/1 @fontFamily;
+        text-transform: uppercase;
+    }
+    &_subtitle {
+        width: 630px;               
+        margin: 0 auto;
+        padding: 70px 0 30px ;
+        text-align: center;
+        font: 700 24px/1 @fontFamily;
+        text-transform: uppercase;
+    }
+    &_name {
+        font: 700 14px/20px @fontFamily;
+        margin: 0;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 25px 19px;
+        &__big {
+            text-transform: none;
+            color: #242728;
+            font: 600 16px/20px @fontFamily;
+        }
+    }
+    &_text {
+        margin: 0;
+        color:  #575757;
+        font: 400 14px/20px @fontFamily;
+        padding: 20px 0;
+        text-align: justify;
+    }
+
+
+}

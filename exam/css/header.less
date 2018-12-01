@@ -1,0 +1,23 @@
+.header {
+    background: url(../img/bg-header.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    min-width: @minWidth;
+    padding: 0 @paddingMain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      background: #150a0c;
+      opacity: .7;
+      width: 100%;
+      height: 100%;
+    }
+    &_content {
+      position: relative;
+    }
+}

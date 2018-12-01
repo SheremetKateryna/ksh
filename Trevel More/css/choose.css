@@ -1,0 +1,12 @@
+.choose {
+  background: url(../img/bg-choose.jpg) no-repeat;
+  background-size: cover;
+  padding: 120px 0;
+}
+.choose_imgs {
+  grid-column: span 6;
+  text-align: right;
+}
+.choose_pic1 {
+  margin-right: 125px;
+}

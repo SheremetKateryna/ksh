@@ -1,0 +1,9 @@
+@font-face {
+   font-family: 'Aleo Regular';
+   src: url(../fonts/aleo-regular-webfont.woff);
+   src: url(../fonts/aleo-regular-webfont.woff2);
+   font-weight: normal;
+   font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');

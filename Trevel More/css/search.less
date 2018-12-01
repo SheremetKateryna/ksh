@@ -1,0 +1,26 @@
+.search {
+	text-align: center;
+	padding: 55px 0 120px;
+	position:relative;
+	&::before {
+		content: "";
+		position: absolute;
+		width: 774px;
+		height: 96px;
+		background: url(../img/dots.svg);
+		left: 50%;
+		transform: translateX(-50%)
+	}
+	&_item {
+		position:relative;
+		grid-column: span 4;
+	}
+	&_icon{
+		background: #333;
+		padding: 35px 0;
+	}
+	&_title {
+		font: 400 36px/26px @fontFamily;
+		color: #e8e8e8;
+	}
+}

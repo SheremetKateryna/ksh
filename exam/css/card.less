@@ -1,11 +1,38 @@
 .card {
    position: relative;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   padding: 230px 0 330px;
-   &_title {
+   height: 490px;
+   background: url(../img/bg-1.jpg) no-repeat;
+   background-size: cover;
+   &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      background: #150a0c;
+      opacity: .7;
+      width: 100%;
+      height: 100%;
+   }
+   &__header {
+      background: url(../img/bg-header.jpg) no-repeat;
+      background-size: cover;
+      height: 100vh;
+   }
+   &__appointment {
+      background: url(../img/bg-2.jpg) no-repeat;
+      background-size: cover;
+   }
+   &_content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-width: @minWidth;
+      padding: 0 @paddingMain;
+      margin: auto;
+      height: 100%;
+   }
+   &_name {
       text-align: center;
       font: 700 40px/60px @fontFamily;
       color: #fff;
@@ -16,37 +43,41 @@
       color: #fff;
       margin: 75px 0 30px;
       text-transform: uppercase;
-      &_accent {
-         color: #ffc762;
-      } 
    }
-     &_name {
-      font: 700 36px/1 @fontFamily;
-      color: #fff;
+   &_subtitle-accent {
+      color: #ffea73;
    }
-   &_form{
-      width: 570px;
-      display: flex;
-      border: none;
-      border-radius: 3px;
-      box-sizing: border-box;
-      &__reception {
-         position:absolute;
-         bottom: 150px;
+   &_title {
+      font: 700 36px/36px @fontFamily;
+      color:  #ffffff;
+      position: relative;
+      margin-bottom: 95px;
+      text-transform: uppercase;
+      &:before {
+         text-align: center;
+         content: "";
+         background: url(../img/line.png) no-repeat;
+         width: 201px;
+         height: 14px;
+         position: absolute;
+         top: 65px;
+         left: 0;
+         right: 0;
+         margin: auto;
+      }
+      &__services {
+         color: @color;
+         &:before {
+            background: url(../img/line-black.png) no-repeat;
+         }
+      }
+      &__defection {
+         color: @color;
+         margin-bottom: 60px;
+         &:before {
+            background: url(../img/line-black.png) no-repeat;
+            top: 95px;
+         }
       }
    }
-   &_input {
-      width: calc(100% - 200px);
-      border: 0;
-      font: 14px/60px @fontFamily;
-      color: #000;
-      padding: 0 20px;
-      text-align: center;
-      &::placeholder {
-         color: #a6a6a6;
-      }
-   }
-
- 
 }
-

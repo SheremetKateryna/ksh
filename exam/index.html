@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
    <meta charset="UTF-8">
    <link rel="stylesheet" href="css/normalize.css">
@@ -7,38 +7,37 @@
    <link rel="icon" href="img/favicon.png" type="image/png">
    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
    <title>Юридическое агенство</title>
-   <body>
-   </head>
-   <header class="header">
-     <div class="header_content">
-      <div class="logo">
-         <img src="img/logo.png" alt="">
-         <div class="logo_contact">
-            +7 (812) 407-10-22
-            <div class="logo_mail">info@la-advokat.ru</div>
-         </div>
+</head>
+<body>
+   <header class="card card__header">
+     <div class="logo">
+      <img src="img/logo.png" alt="logo">
+      <div class="logo_contact">
+         +7 (812) 407-10-22
+         <div class="logo_mail">info@la-advokat.ru</div>
       </div>
-      <div class="card">
-         <div class="card_title">
-            Юридическая консультация по вопросам долевого строительства
-         </div>
-         <div class="card_subtitle">Оставьте заявку и получите <span class="subtitle_accent">бесплатную консультацию</span>
-         </div>
-         <form action="" class="card_form">
-            <input type="phone" class="card_input" placeholder="Ваш номер телефона">
-            <button class="button">
-               Получить
-            </button>
-         </form>
-      </div>
+   </div>
+   <div class="card_content">
+      <h1 class="card_name">
+         Юридическая консультация по вопросам долевого строительства
+      </h1>
+      <h3 class="card_subtitle">Оставьте заявку и получите 
+         <span class="card_subtitle-accent">бесплатную консультацию</span>
+      </h3>
+      <form action="mailto:info@la-advokat.ru" class="form">
+         <input type="tel" class="form_input" placeholder="Ваш номер телефона">
+         <button class="form_button">
+            Получить
+         </button>
+      </form>
       <div class="scroll">
          <img src="img/scroll.svg" alt="">
       </div>
    </div>
 </header>
-<main class="main">
-   <section class="service">
-      <h2 class="service_title"> наши услуги</h2>
+<main>
+   <section class="service service__bg">
+      <h2 class="card_title card_title__services">наши услуги</h2>
       <div class="grid-box">
          <div class="service_item">
             <img src="img/services1.jpg" alt="" class="service_icon">
@@ -58,7 +57,7 @@
          </div> 
       </div>
    </section>
-   <section class="service">
+   <section class="service service__bg">
       <h3 class="service_subtitle">Поможем в случаях</h3>
       <div class="grid-box">
          <div class="service_item service_item__big">
@@ -93,120 +92,149 @@
          </div>
       </div>
    </section>
-   <section>
 
-   </section>
-   <section class="reception">
-      <div class="card">
-         <div class="card_name">
-            Правовая помощь дольщикам
+
+
+   <section class="service service__bg">
+      <h2 class="card_title card_title__services">наши услуги</h2>
+      <div class="navigation">
+         <nav class="navigation_menu">
+            <a href="#active_card" class="navigation_item">СК Базис, ЖК «Люмьер»</a>
+            <a href="#" class="navigation_item">ООО «Балтжилинвест», ЖК “Охта-Модерн”</a>
+            <a href="#" class="navigation_item">ГК «Город» (ООО путник», ООО «Планета») ЖК “Ленинский парк”</a>
+            <a href="#" class="navigation_item">ГК «Город» ( ООО «Орбита», ООО «Азимут»)
+            ЖК “Прибалтийский”, ЖК “Морская Звезда”</a>
+            <a href="#" class="navigation_item">ООО «Г.С.К» (ЛЭК). Лондон Парк</a>
+            <a href="#" class="navigation_item">ООО «Строительная компания 
+            «Дальпитерстрой». ЖК «Шушары»</a>
+            <a href="#" class="navigation_item">ООО «Дом-строй» (ЛидерГрупп)
+            ЖК “Южный Маяк”</a>
+            <a href="#" class="navigation_item">ООО «ЛенСпецСтрой». ЖК “Медный всадник”</a>
+            <a href="#" class="navigation_item">ООО «ЛЭК-1». ЖК “Граф Орлов”</a>
+            <a href="#" class="navigation_item">02 Девелопмент. ЖК «Силы Природы»</a>
+            <a href="#" class="navigation_item">ЗАО СК «Росстрой» (СУ-155). ЖК “Каменка”.
+            ЖК “Новая Каменка”</a>
+            <a href="#" class="navigation_item">Айдадом (коттеджный поселок)</a>
+            <a href="#" class="navigation_item">Легенда Девелопмент</a>
+            <a href="#" class="navigation_item">Лидер Групп.  ЖК "Небо Москвы"
+            м. Фрунзенская</a>
+            <a href="#" class="navigation_item">Карелия Девелопмент, Объект на участке
+            Мистолово</a>
+         </nav>
+         <div class="navigation_card">
+            <img src="img/objects1.jpg" alt="СК Базис, ЖК «Люмьер»" id="active_card" class="navigation_icon">
+            <h3 class="navigation_title">СК Базис, ЖК «Люмьер»</h3>
+            <p class="navigation_text">Неустойка за просрочку сдачи объекта. Просрочка более 2 лет по некоторым объектам. Брали денежные средства по gредварительному договору — что является прямым нарушением Закона о долевом участии.</p>
          </div>
-         <form action="" class="card_form card_form__reception">
-            <input type="phone" class="card_input" placeholder="Ваш номер телефона">
-            <button class="button">
+      </div>
+   </section>
+   <section class="card">
+      <div class="card_content">
+         <h2 class="card_title">
+            Правовая помощь дольщикам
+         </h2>
+         <form action="mailto:info@la-advokat.ru" class="form">
+            <input type="tel" class="form_input" placeholder="Ваш номер телефона">
+            <button class="form_button">
                Получить
             </button>
          </form>
-      </section>
-      <section class="service">
-         <h3 class="service_subtitle">Распространённые нарушения со стороны застройщиков</h3>
-         <div class="grid-box">
-            <div class="service_item service_item__big">
-               <img src="img/services5.jpg" alt="" class="service_icon">
-               <button class="service_button">получить консультацию</button>
-               <p class="service_text">Навязанная услуга по регистрации договора долевого участия в Федеральной службе государственной регистрации кадастра и картографии (Росреестр) - практически, у всех застройщиков.</p>
-            </div> 
-            <div class="service_item service_item__big">
-               <img src="img/services6.jpg" alt="" class="service_icon">
-               <button class="service_button">получить консультацию</button>
-               <p class="service_text">Занижение в договоре площади квартиры, с указанием, что если площадь уменьшится или увеличится, то соответственно, либо застройщик вернёт разницу или клиент доплачивает за дополнительные метры (в частности, ЖК “Северная долина”, застройщик Главстрой СПб).</p>
-            </div> 
-            <div class="service_item service_item__big">
-               <img src="img/services7.jpg" alt="" class="service_icon">
-               <button class="service_button">получить консультацию</button>
-               <p class="service_text">Нарушения в области санитарных норм: превышение аммиака в сданной квартире (в частности, ЖК Оптимист, застройщик ЮИТ)</p>
-            </div> 
-            <div class="service_item service_item__big">
-               <img src="img/services8.jpg" alt="" class="service_icon">
-               <button class="service_button">получить консультацию</button>
-               <p class="service_text">Некачественная отделка (например, щели в окнах), плохое теплоснабжение и т.д. (в частности, ЖК Балтийская Жемчужина)</p>
-            </div> 
-            <div class="service_item service_item__big">
-               <img src="img/services9.jpg" alt="" class="service_icon">
-               <button class="service_button">получить консультацию</button>
-               <p class="service_text">Квартиры сданные с кривыми стенами, например, в некоторых квартирах ванны  были установлены под наклоном, так как не помещались между стенами (в частности, ЖК Аврора, застройщик ЛСР (ГДСК)).</p>
-            </div> 
-            <div class="service_item service_item__big">
-               <img src="img/services10.jpg" alt="" class="service_icon">
-               <button class="service_button">получить консультацию</button>
-               <p class="service_text"> Предлагается к подписанию Акт осмотра квартиры без осмотра, причем в Акте, который не подлежит изменению, об этом не указывается. В Акте указывается формулировка, что квартира осмотрена и клиент претензий не имеет. Если Акт не подписывается, то придется ждать еще от 2-х до 4-х месяцев до получения ключей (в частности, ЖК “Северная долина”, застройщик Главстрой СПб). </p>
-            </div>
-         </section>
-         <section class="reception">
-            <div class="card">
-               <div class="card_name">
-                  Запишись на бесплатный первичный прием
-               </div>
-               <form action="" class="card_form card_form__reception">
-                  <input type="phone" class="card_input" placeholder="Ваш номер телефона">
-                  <button class="button">
-                     Получить
-                  </button>
-               </form>
-            </section>
-            <section class="sale">
-               <h3 class="sale_title"> скидки</h3>
-               <h5 class="sale_subtitle">Для наших клиентов действует система скидок</h5>
-               <div class="grid-box">
-                  <div class="sale_item">
-                     <div class="sale_name">скидка</div>
-                     <div class="sale_description">10%</div>
-                     <div class="sale-text">при заключении договора в день первичного приёма
-                     </div>
-                  </div>
-                  <div class="sale_item">
-                     <div class="sale_name">скидка</div>
-                     <div class="sale_description">10%</div>
-                     <div class="sale-text">при заключении договора в день первичного приёма
-                     </div>
-                  </div>
-                  <div class="sale_item">
-                     <div class="sale_name">скидка</div>
-                     <div class="sale_description">10%</div>
-                     <div class="sale-text">при заключении договора в день первичного приёма
-                     </div>
-                  </div>
-                  <div class="sale_item">
-                    <div class="sale_name">скидка</div>
-                    <div class="sale_description">10%</div>
-                    <div class="sale-text">при заключении договора в день первичного приёма
-                    </div>
-                 </div>
-              </div>
-           </section>
-           <section class="contact">
-            <h3 class="contact_title">Контакты</h3>
-            <p class="contact_adress">190031, РФ, Санкт-Петербург, Спасский пер., дом 12, лит.А, помещение 7Н </p>
-            <div class="contact_line">
-               <div class="contact_phone"> +7 (812) 407-10-22 </div>
-               <div class="contact_mail">info@la-advokat.ru</div>
-            </div>
-
-         </section>
-      </main>
-      <footer class="footer">
-         <h3 class="footer_title">мы принимаем к оплате</h3>
-         <div class="footer_pay">
-            <img src="img/mastercard.png" alt="">
-            <img src="img/visa.png" alt="">
+      </div>
+   </section> 
+   <section class="service">
+      <h2 class="card_title card_title__defection">Распространённые нарушения со стороны застройщиков</h2>
+      <h5 class="service_note">В нашей практике выявлены наиболее распространенные нарушения даже у лидеров рынка</h5>
+      <div class="grid-box">
+         <div class="service_item service_item__big">
+            <img src="img/services5.jpg" alt="" class="service_icon">
+            <button class="service_button">получить консультацию</button>
+            <p class="service_text">Навязанная услуга по регистрации договора долевого участия в Федеральной службе государственной регистрации кадастра и картографии (Росреестр) - практически, у всех застройщиков.</p>
+         </div> 
+         <div class="service_item service_item__big">
+            <img src="img/services6.jpg" alt="" class="service_icon">
+            <button class="service_button">получить консультацию</button>
+            <p class="service_text">Занижение в договоре площади квартиры, с указанием, что если площадь уменьшится или увеличится, то соответственно, либо застройщик вернёт разницу или клиент доплачивает за дополнительные метры (в частности, ЖК “Северная долина”, застройщик Главстрой СПб).</p>
+         </div> 
+         <div class="service_item service_item__big">
+            <img src="img/services7.jpg" alt="" class="service_icon">
+            <button class="service_button">получить консультацию</button>
+            <p class="service_text">Нарушения в области санитарных норм: превышение аммиака в сданной квартире (в частности, ЖК Оптимист, застройщик ЮИТ)</p>
+         </div> 
+         <div class="service_item service_item__big">
+            <img src="img/services8.jpg" alt="" class="service_icon">
+            <button class="service_button">получить консультацию</button>
+            <p class="service_text">Некачественная отделка (например, щели в окнах), плохое теплоснабжение и т.д. (в частности, ЖК Балтийская Жемчужина)</p>
+         </div> 
+         <div class="service_item service_item__big">
+            <img src="img/services9.jpg" alt="" class="service_icon">
+            <button class="service_button">получить консультацию</button>
+            <p class="service_text">Квартиры сданные с кривыми стенами, например, в некоторых квартирах ванны  были установлены под наклоном, так как не помещались между стенами (в частности, ЖК Аврора, застройщик ЛСР (ГДСК)).</p>
+         </div> 
+         <div class="service_item service_item__big">
+            <img src="img/services10.jpg" alt="" class="service_icon">
+            <button class="service_button">получить консультацию</button>
+            <p class="service_text"> Предлагается к подписанию Акт осмотра квартиры без осмотра, причем в Акте, который не подлежит изменению, об этом не указывается. В Акте указывается формулировка, что квартира осмотрена и клиент претензий не имеет. Если Акт не подписывается, то придется ждать еще от 2-х до 4-х месяцев до получения ключей (в частности, ЖК “Северная долина”, застройщик Главстрой СПб). </p>
          </div>
-         <div class="footer_copyright">
-            <p>© 2004-2016 Юридическое агентство Санкт-Петербурга</p>
-            <p>Незаконное использование, распространение, копирование материалов и информации,
-               размещенной на настоящем информационном ресурсе (dolevoepravo.ru ) влечет ответственность,
-               предусмотренную законодательством Российской Федерации и международными нормами,
-            в т.ч. законодательством об интеллектуальной собственности.</p>
+      </div>
+   </section>
+   <section class="card card__appointment">
+      <div class="card_content">
+         <h2 class="card_title">
+            Запишись на бесплатный первичный прием
+         </h2>
+         <form action="mailto:info@la-advokat.ru" class="form">
+            <input type="tel" class="form_input" placeholder="Ваш номер телефона">
+            <button class="form_button">
+               Получить
+            </button>
+         </form>
+      </div>
+   </section> 
+   <section class="service">
+      <h3 class="card_title card_title__services"> скидки</h3>
+      <h5 class="service_note">Для наших клиентов действует система скидок</h5>
+      <div class="grid-box">
+         <div class="service_item service_item__sale">
+            <div class="service_sale">10%</div>
+            <div class="service_text service_text__sale">при заключении договора в день первичного приёма
+            </div>
          </div>
-      </footer>
-   </body>
-   </html>
+         <div class="service_item service_item__sale">
+            <div class="service_sale">10%</div>
+            <div class="service_text service_text__sale">при заключении договора в день первичного приёма
+            </div>
+         </div>
+         <div class="service_item service_item__sale">
+            <div class="service_sale">10%</div>
+            <div class="service_text service_text__sale">при заключении договора в день первичного приёма
+            </div>
+         </div>
+         <div class="service_item service_item__sale">
+           <div class="service_sale">20%</div>
+           <div class="service_text service_text__sale">при заключении договора в день первичного приёма
+           </div>
+        </div>
+     </div>
+  </section>
+  <section class="contact">
+   <h3 class="contact_title">Контакты</h3>
+   <p class="contact_adress">190031, РФ, Санкт-Петербург, Спасский пер., дом 12, лит.А, помещение 7Н </p>
+   <div class="contact_line">
+      <div class="contact_phone"> +7 (812) 407-10-22 </div>
+      <div class="contact_mail">info@la-advokat.ru</div>
+   </div>
+</section>
+</main>
+<footer class="footer">
+   <h3 class="footer_title">мы принимаем к оплате</h3>
+   <div class="footer_pay">
+      <img src="img/mastercard.png" alt="">
+      <img src="img/visa.png" alt="">
+   </div>
+   <div class="footer_copyright">
+      <p>© 2004-2016 Юридическое агентство Санкт-Петербурга</p>
+      <p>Незаконное использование, распространение, копирование материалов и информации, размещенной на настоящем информационном ресурсе (dolevoepravo.ru ) влечет ответственность, предусмотренную законодательством Российской Федерации и международными нормами, в т.ч. законодательством об интеллектуальной собственности.</p>
+   </div>
+</footer>
+</body>
+</html>

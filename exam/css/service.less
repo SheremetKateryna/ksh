@@ -1,7 +1,11 @@
 .service {
     min-width: @minWidth;
-    padding: 0 @paddingMain;
+    padding: 50px @paddingMain 20px;
     color: @color;
+    // display: flex;
+    // flex-direction: column;
+    text-align: center;
+    // justify-content: center;
     &_item{
         grid-column: span 3;
         background: #fff;
@@ -9,6 +13,13 @@
         &__big {
             grid-column: span 4;
         }
+        &__sale {
+            grid-column: span 3;
+            padding: 45px 0 40px;
+        }
+    }
+    &__bg {
+        background: #f0f0f0;
     }
     &_button {
         width: 230px;
@@ -32,9 +43,8 @@
         text-transform: uppercase;
     }
     &_subtitle {
-        width: 630px;               
-        margin: 0 auto;
-        padding: 70px 0 30px ;
+        width: 630px;
+        margin: 0 auto 30px;
         text-align: center;
         font: 700 24px/1 @fontFamily;
         text-transform: uppercase;
@@ -57,7 +67,29 @@
         font: 400 14px/20px @fontFamily;
         padding: 20px 0;
         text-align: justify;
+        &__sale {
+            text-align: center;
+        }
     }
-
-
+    &_note {
+        font: 400 18px/20px @fontFamily;
+        color:  #575757;
+        margin-bottom: 20px;
+    }
+    &_sale {
+        font: 700 60px/70px @fontFamily;
+        color:  #bf0508;
+        font-size: 60px;
+        line-height: 70px;
+        display: flex;
+        flex-direction: column;
+        text-transform: uppercase;
+        &:before {
+            content: "cкидка";
+            color:  #bf0508;
+            font-size: 14px;
+            line-height: 20px;
+            color:  #150a0c;
+        }
+    }
 }

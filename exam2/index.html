@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body></body>
+  <header class="header layout layout__overlayed">
+    <div class="header_container layout_section">
+      <div class="header_main">
+        <div class="header_logo"><img src="img/logo.svg" alt=""/></div>
+        <div class="nav">
+          <div class="nav_item about-us_scroll"> ABOUT US</div>
+          <div class="nav_item project_scroll">PROJECTS</div>
+          <div class="nav_item news_scroll">NEWS</div>
+          <div class="nav_item contact_scroll">CONTACT</div>
+        </div>
+        <div class="social"><a class="social_link" href=""><i class="fa fa-facebook social_item"></i></a><a class="social_link" href=""><i class="fa fa-twitter social_item"></i></a><a class="social_link" href=""><i class="fa fa-instagram social_item"></i></a></div>
+      </div>
+    </div>
+    <div class="header_slider">
+      <div class="header_content">
+        <h1 class="h1 h1__invert">Simple & mordern1</h1>
+        <h3 class="h3 h3__invert">We make the world's beautiful every day1</h3>
+      </div>
+      <div class="header_content">
+        <h1 class="h1 h1__invert">Simple & mordern2</h1>
+        <h3 class="h3 h3__invert">We make the world's beautiful every day2</h3>
+      </div>
+      <div class="header_content">
+        <h1 class="h1 h1__invert">Simple & mordern3</h1>
+        <h3 class="h3 h3__invert">We make the world's beautiful every day3</h3>
+      </div>
+    </div>
+    <div class="header_scroll _scroll"><img src="img/arrow.png" alt=""/>
+      <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+      <script src="js/script_slider.js"></script>
+    </div>
+  </header>
+  <section class="layout _scrollTo">
+    <div class="card_header">
+      <h2 class="h2">WHAT WE DO</h2>
+    </div>
+    <div class="card layout_section"><img class="card_img" src="img/main1.jpg" alt=""/>
+      <div class="card_content">
+        <h4 class="h4">ONE WORLD</h4>
+        <h2 class="h2 h2__left">TRADE CENTER</h2>
+        <p class="card_text">Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
+        <button class="card_button">MORE DETEILS</button>
+        <div class="card_location"> <i class="fa fa-map-marker">  New York City, United States - 1776 feet</i></div>
+      </div>
+    </div>
+    <div class="card layout_section">
+      <div class="card_content">
+        <h4 class="h4">INTERNATION</h4>
+        <h2 class="h2 h2__left">COMERCE CENTRE</h2>
+        <p class="card_text">Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.</p>
+        <button class="card_button">MORE DETEILS</button>
+        <div class="card_location"> <i class="fa fa-map-marker">  Hong Kong - 1588 Feet</i></div>
+      </div><img class="card_img card_img__invert" src="img/main2.jpg" alt=""/>
+    </div>
+    <script src="js/script_scroll.js"></script>
+    <div class="_map" style="height: 400px"></div>
+    <script>
+      function initMap() {
+      var loc = {lat: -34.397, lng: 150.644};
+      var map = new google.maps.Map(
+      $('._map')[0], {zoom: 4, center: loc});
+      var marker = new google.maps.Marker({position: loc, map: map});
+      }
+    </script>
+    <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&amp;callback=initMap"></script>
+  </section>
+</html>

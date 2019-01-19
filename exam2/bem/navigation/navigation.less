@@ -1,0 +1,27 @@
+.nav {
+   display:flex;
+   margin: 0 80px;
+
+   &_item {
+      position:relative;
+      &:not(:last-child){
+         margin-right: 60px;
+      }
+      &:before {
+         content:'';
+         position:absolute;
+         border:none;
+         height: 9px;
+         width: 9px;
+         border-radius:50%;
+         background-color: white;
+         z-index: 999;
+         z-index: 999; 
+         top: 0; 
+         bottom: 0; 
+         left: -20px; 
+         right: 0; 
+         margin: 5px; 
+      }
+   }
+}

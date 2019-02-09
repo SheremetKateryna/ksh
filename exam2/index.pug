@@ -1,8 +1,16 @@
 include bem/header/header
+include bem/logo
 include bem/social/social
 include bem/navigation/navigation
 include bem/social/social
 include bem/card/card
+include bem/news/news
+include bem/contact/contact
+include bem/footer/footer
+
+
+include data/news
+
 
 doctype html
 html(lang='en')
@@ -15,21 +23,16 @@ html(lang='en')
     link(rel='stylesheet', type='text/css', href='slick-1.8.1/slick/slick.css')
     link(rel='stylesheet', type='text/css', href='slick-1.8.1/slick/slick-theme.css')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
-
-
-
+    script(src='js/script_scroll.js')
   body
   +header
-  section.layout._scrollTo
+  section.layout
     +card
     +card_invert
+  +news
 
 
-
-
-    script(src='js/script_scroll.js')
-
-    ._map(style='height: 400px')
+  ._map(style='height: 700px')
     script.
       function initMap() {
       var loc = {lat: -34.397, lng: 150.644};
@@ -38,6 +41,9 @@ html(lang='en')
       var marker = new google.maps.Marker({position: loc, map: map});
       }
     script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap')
+
+  +contact
+  +footer
 
 
 

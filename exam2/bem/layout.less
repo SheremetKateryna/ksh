@@ -11,6 +11,15 @@
         margin: 0 auto;
         position: relative;
         z-index: 2;
+        &__footer {
+            width: 830px;
+        }
+        &__contact {
+            width: 770px;
+            position: relative;
+            // background: #fff;
+
+        }
     }
     &_row {
         display: flex;
@@ -27,7 +36,7 @@
         @gutters: @layoutGutter * 3 / 4;
         width: calc(25% - @gutters);
     }
-    &__overlayed {
+    &__header {
         position: relative;
         &::before {
             content: '';
@@ -38,7 +47,38 @@
             bottom: 0;
             z-index: 1;
             background: url(../img/bg-01.png);
+            background-size: cover;
             opacity: 0.06;
+        }
+    }
+    &__news{
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            background: url(../img/bg-02.png);
+            background-size: cover;
+            opacity: 0.09;
+        }
+    }
+    &__footer{
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            background: url(../img/footer-bg.png);
+            background-size: cover;
+            opacity: 0.09;
         }
     }
 }

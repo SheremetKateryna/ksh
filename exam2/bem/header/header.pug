@@ -1,12 +1,7 @@
-include ../navigation/navigation
-include ../social/social
-
 mixin header
-  header.header.layout.layout__overlayed
-    .header_container.layout_section
-      .header_main
-        .header_logo
-          img(src='img/logo.svg', alt='')
+  header.header.layout.layout__header
+    .header_main.layout_section
+        +logo
         +navigation
         +social
     .header_slider

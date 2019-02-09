@@ -1,12 +1,19 @@
 $(document).ready(function(){
    $('.header_slider').slick({
-       slidesToShow: 1,
+      dots: true,
+      infinite: true,
+      speed: 4000,
+      fade: true,
+      cssEase: 'linear',
        arrows: false,
-       variableWidth: true,
        autoplay: true,
-       autoplaySpeed: 2000,
-       speed: 4000,
-       infinite: false,
-       dots: true,
    });
+      $('.slider').slick({
+       arrows: true,
+       slidesToShow: 3,
+       infinite: true,
+       nextArrow: '._nextArrow',
+        prevArrow: '._prevArrow',
+   });
+   
 });

@@ -1,7 +1,22 @@
 $(function(){
        $('._scroll').on('click',function(){
          $('html').animate({
-           scrollTop: $('._scrollTo').offset().top
+           scrollTop: $('._scrollTo').offset().top - 50 
+         }, 5000)
+       });
+       $('.project_scroll').on('click',function(){
+         $('html').animate({
+           scrollTop: $('.project_scrollTo').offset().top - 50
+         }, 5000)
+       });
+       $('.news_scroll').on('click',function(){
+         $('html').animate({
+           scrollTop: $('.news_scrollTo').offset().top
+         }, 5000)
+       });
+       $('.contact_scroll').on('click',function(){
+         $('html').animate({
+           scrollTop: $('.contact_scrollTo').offset().top - 300
          }, 5000)
        });
      });

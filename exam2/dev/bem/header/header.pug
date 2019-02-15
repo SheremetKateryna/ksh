@@ -1,0 +1,20 @@
+mixin header
+  header.header.layout.layout__header
+    .header_main.layout_section
+        +logo
+        +navigation
+        +social
+    .header_slider
+      .header_content
+          h1.h1.h1__invert Simple & mordern1
+          h3.h3.h3__invert We make the world's beautiful every day1
+      .header_content
+          h1.h1.h1__invert Simple & mordern2
+          h3.h3.h3__invert We make the world's beautiful every day2
+      .header_content
+          h1.h1.h1__invert Simple & mordern3
+          h3.h3.h3__invert We make the world's beautiful every day3
+    a.header_scroll._scrollLink(href='#project')
+      img(src='img/arrow.png', alt='')
+      script(type='text/javascript', src='dev/slick/slick/slick.min.js')
+      script(src='dev/js/script_slider.js')

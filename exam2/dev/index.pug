@@ -1,0 +1,38 @@
+include data/news
+
+
+include bem/header/header
+include bem/logo
+include bem/social/social
+include bem/navigation/navigation
+include bem/social/social
+include bem/card/card
+include bem/news/news
+include bem/contact/contact
+include bem/map/map
+include bem/gallery/gallery
+include bem/footer/footer
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700' rel='stylesheet')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(rel='stylesheet', type='text/css', href='dev/style/normalize.css')
+    link(rel='stylesheet', type='text/css', href='dest/style/style.css')
+    link(rel='stylesheet', type='text/css', href='dev/slick/slick/slick.css')
+    link(rel='stylesheet', type='text/css', href='dev/slick/slick/slick-theme.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js')
+    script(src='dev/js/script_scroll.js')
+  body
+    +header
+    section.layout(id='project')
+      +card
+      +card_invert
+    +news
+    +gallery
+    +map
+    +footer

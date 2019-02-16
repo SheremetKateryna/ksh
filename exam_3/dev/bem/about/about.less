@@ -1,0 +1,37 @@
+.about {
+   padding: 80px 0 70px;
+   color: @color;
+   display: flex;
+   position: relative;
+   &_img {
+   position: relative;
+   width: 380px;
+   height: 555px;
+   margin-right: 125px;
+   }
+   &_header{
+   text-align: center;
+   position: absolute;
+   z-index: 9999;
+   top: 140px;
+   left: 95px;
+   &:before {
+      content: url(../../img/Icon-AboutUs.png);
+       display: block;
+       text-align: center;
+      }
+   }
+      &_text {
+         text-align: left;
+         font: 400 20px @fontPT;
+         color: @colorText;
+         font-style: italic;
+         margin: 75px 0;
+      &__bold {
+         font: 700 20px @fontPT;
+      }
+   }
+   &_main {
+   text-align: center;
+   }
+}

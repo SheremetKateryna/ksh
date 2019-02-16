@@ -1,0 +1,15 @@
+mixin team 
+  .layout
+    .layout_section
+      .team_wrap
+        h2.h2.h2__invert meat our team 
+        .team-slider
+            each item in teamItem 
+              .team_slider
+                .team_main
+                  img.team_img(src=item.img, alt='')
+                  .team_name=item.name
+                  .team_position=item.position
+                  .team_social
+                    +social
+

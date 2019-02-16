@@ -1,0 +1,30 @@
+.h2 {
+    font: 600 35px/60px @font;
+    text-transform: uppercase;
+    text-align: center;
+    color: @colorAccent;
+    margin: 0;
+    &__work {
+        &:before {
+            content: url(../../img/Icon-Works.png);
+               display: block;
+               text-align: center;
+        }
+    }
+    &__contact{
+        &:before {
+            content: url(../../img/Icon-Contact.png);
+               display: block;
+               text-align: center;
+        }
+    }
+    &__invert {
+    color: @colorText;
+    margin-bottom: 60px;
+        &:before {
+            content: url(../../img/Icon-Team.png);
+               display: block;
+               text-align: center;
+        }
+    }
+}

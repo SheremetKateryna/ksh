@@ -1,0 +1,17 @@
+mixin work
+  section.layout.work(id='works')
+    .layout
+      .layout_section
+          .work_header
+            h2.h2.h2__work recent works
+          button.button.button__slider.work_arrow-prev._prewArrow
+            i.fa.fa-chevron-left
+          .work-slider
+              img.work_img(src='img/work.jpg', alt='')
+              img.work_img(src='img/work.jpg', alt='')
+              img.work_img(src='img/work.jpg', alt='')
+              img.work_img(src='img/work.jpg', alt='')
+          button.button.button__slider._nextArrow.work_arrow-next
+            i.fa.fa-chevron-right
+          .work_button
+            input.button.button__invert(type='submit', value='View Galarry')

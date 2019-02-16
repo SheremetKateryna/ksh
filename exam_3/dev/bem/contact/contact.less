@@ -1,0 +1,45 @@
+.contact {
+    background-image: url("../../img/Map.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 60px;
+    &_form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 270px 120px 0;
+        width: 860px;
+    }
+    &_input {
+        width: 860px;
+        border-radius: 4px;
+        background-color:  rgba(235, 235, 235, 0.5);
+        padding: 15px 30px;
+        border: none;
+        font: 400 18px @font;
+        font-style: italic;
+        width: 414px;
+        &::placeholder {
+        color: #fff;
+        }
+        &:last-child {
+            margin-left: 30px;
+        }
+    }
+    &_textarea {
+        box-sizing: border-box;
+        width: 100%;
+        border-radius: 4px;
+        background-color:  rgba(235, 235, 235, 0.5);
+        padding: 15px 30px;
+        border: none;
+        color: #fff;
+        height: 200px;
+        width: 978px;
+        &::placeholder {
+        color: #fff;
+        }
+    }
+}

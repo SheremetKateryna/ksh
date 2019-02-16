@@ -1,0 +1,41 @@
+include data/services
+include data/team
+
+include bem/header/header
+include bem/social/social
+include bem/about/about
+include bem/footer/footer
+include bem/service/service
+include bem/team/team
+include bem/work/work
+include bem/contact/contact
+
+
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title CreativeSolution
+    link(rel='shortcut icon', href='img/favicon.png', type='image/x-icon')
+    link(rel='stylesheet', type='text/css', href='dev/style/fonts.css')
+    link(rel='stylesheet', type='text/css', href='dev/style/normolize.css')
+    link(rel='stylesheet', type='text/css', href='dest/style/style.css')
+
+    link(rel='stylesheet', type='text/css', href='dev/slick/slick/slick.css')
+    link(rel='stylesheet', type='text/css', href='dev/slick/slick/slick-theme.css')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(type='text/javascript', src='dev/slick/slick/slick.min.js')
+    script(src='dev/js/script_scroll.js')
+    script(src='dev/js/script_slider.js')
+
+  body
+    +header
+    +about
+    .layout(id='services')
+      .layout_section
+        +service(2,3)
+    +work
+    +team
+    +contact
+    //- +map
+    +footer

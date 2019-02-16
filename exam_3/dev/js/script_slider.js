@@ -8,11 +8,11 @@
        arrows: false,
       });
             $('.work-slider').slick({
-        dots: true,
-        nextArrow: '._nextArrow',
-        prevArrow: '._prevArrow',
+        dots: false,
+        // nextArrow: '._nextArrow',
+        // prevArrow: '._prevArrow',
        slidesToShow: 1,
-       arrows: true,
+       arrows: false,
        infinite: true,
        speed: 3000,
        autoplay: true,

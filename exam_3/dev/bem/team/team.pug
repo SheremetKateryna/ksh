@@ -3,6 +3,8 @@ mixin team
     .layout_section
       .team_wrap
         h2.h2.h2__invert meat our team 
+        button.button.button__slider.team_arrow-prev._prevArrowTeam
+            i.fa.fa-chevron-left
         .team-slider
             each item in teamItem 
               .team_slider
@@ -12,4 +14,6 @@ mixin team
                   .team_position=item.position
                   .team_social
                     +social
+        button.button.button__slider.team_arrow-next._nextArrowTeam
+            i.fa.fa-chevron-right
 

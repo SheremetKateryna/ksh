@@ -1,12 +1,12 @@
 mixin contact
   section.layout.contact(id='contact')
-      .layout
         .layout_section
-          h2.h2.h2__contact get in touch
-          form.contact_form(action="#" method="post" name="info_form")
-            .layout_row
-              input.contact_input(type="text" placeholder="Your Name" pattern="^[a-zA-Z]+$" required)
-              input.contact_input(type='email', placeholder='Your E-Mail', required='')
-            .layout_row
-              textarea.contact_textarea(placeholder="Your Message")
-            input.button.button__contact(type='submit', value='sent message') 
+          .contact_wrap
+            h2.h2.h2__contact get in touch
+            form.contact_form(action="#" method="post" name="info_form")
+              .layout_row
+                input.contact_input(type="text" placeholder="Your Name" pattern="^[a-zA-Z]+$" required)
+                input.contact_input(type='email', placeholder='Your E-Mail', required='')
+              .layout_row
+                textarea.contact_textarea(placeholder="Your Message")
+              input.button.button__contact(type='submit', value='sent message') 

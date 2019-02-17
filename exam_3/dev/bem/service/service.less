@@ -1,22 +1,48 @@
 .service {
+  display: flex;
+
   &_item {
     display: flex;
     flex-direction: column;
     justify-content:center;
     align-items: center;
     text-align: center;
-    margin: 90px 0 138px;
-    background: transparent;
-
+    padding: 80px 50px 130px;
+    &__invert {
+      background: #dbdbdb;
+    }
+    &__modifire {
+      background-image: url("../../img/services.jpg");
+      overflow: hidden;
+      position: relative;
+      height: 100%;
+      background-repeat-x: no-repeat;
+      padding: 115px 30px;
+      display: block;
+      right: 0;
+    }
   }
+    &_col{
+      display: flex;
+      flex-direction: column;
+      width: calc(100% / 3);
+    }
   &_title {
     font: 700 24px @fontPT;
     color: @colorText;
-    margin: 20px 0 30px;
+    margin: 20px 0 10px;
+    text-transform: uppercase;
+    &__modifire {
+      color: @colorAccent;
+      margin: 20px 0 110px;
+    }
   }
   &_text {
    font:400 18px @fontPT;
    color: @colorText;
    font-style: italic;
+   &__modifire {
+      color: @colorAccent;
+    }
    }
 }

@@ -1,17 +1,39 @@
-mixin _service(item)
-    .layout_col-3
+mixin service
+  #services.layout
+  .layout_section
+    .service
+      .service_col
+        .service_item.service_item__invert
+          .service_icon
+            img.service_icon(src='img/Icon-Graphic.png', alt='')
+          h5.service_title GRAPHIC DESIGNH
+          .service_text 
+           |Cras mattis consectetur purus sit amet fermentum.
         .service_item
-            .service_icon !{item.icon}
-            h5.service_title=item.title
-            .service_text=item.text
-mixin service(rowNeeded,colNeeded)
-    - var col = 0;
-    - var row = 0;
-
-    while row < rowNeeded
-        .layout_row
-            while col < (row + 1) * colNeeded
-                +_service(serviceItems[col])
-                - col++;
-        - row++;
-
+          .service_icon
+            img.service_icon(src='img/Icon-SEO.png', alt='')
+          h5.service_title ipsum quia
+          .service_text 
+           |Cras mattis consectetur purus sit amet fermentum.
+      .service_col
+        .service_item
+          .service_icon
+            img.service_icon(src='img/Icon-Web.png', alt='')
+          h5.service_title WEB DEVELOPMENT
+          .service_text 
+           |Cras mattis consectetur purus sit amet fermentum.
+        .service_item.service_item__invert
+          .service_icon
+            img.service_icon(src='img/Icon-Mobile.png', alt='')
+          h5.service_title aliquam quaerat
+          .service_text 
+           |Cras mattis consectetur purus sit amet fermentum.
+      .service_col
+        .service_item.service_item__modifire
+          .service_icon
+            img.service_icon(src='img/Icon-Services.png', alt='')
+          h5.service_title.service_title__modifire OUR SERVICES
+          .service_text.service_text__modifire 
+           |“Nullam quis risus eget urna mollis ornare vel eu leo. 
+           |Nulla vitae elit libero, a pharetra augue.”
+           |- Borat -

@@ -1,4 +1,4 @@
-@layoutWidth: 1125px;
+@layoutWidth: 1170px;
 @layoutGutter: 15px;
 @layoutPadding: @layoutGutter;
 
@@ -24,12 +24,6 @@
     &_col-3 {
         @gutters: @layoutGutter * 2 / 3;
         width: calc(100% / 3 - @gutters);
-            &:nth-child(1) {
-      background: #dbdbdb;
-    }
-    &:nth-child(3) {
-      background-image: url("../../img/header.jpg");
-    }
     }
     &_col-4 {
         @gutters: @layoutGutter * 3 / 4;

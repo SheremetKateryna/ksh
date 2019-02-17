@@ -503,6 +503,7 @@ a:hover {
 .service_title__modifire {
   color: #fefdfd;
   margin: 20px 0 110px;
+  font-size: 36px;
 }
 .service_text {
   font: 400 18px 'PT Sans', sans-serif;

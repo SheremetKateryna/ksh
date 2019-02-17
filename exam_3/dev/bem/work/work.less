@@ -9,15 +9,21 @@
     }
     &_arrow-prev {
       position: absolute;
-      left: 0px;
+      left: 50px;
       top: calc(50% - 60px);
       z-index: 99999;
+      @media (max-width:1170px){
+         left: 0;
+   }
     }
     &_arrow-next {
       position: absolute;
-      right: 0px;
+      right: 50px;
       top: calc(50% - 60px);
       z-index: 9999;
+      @media (max-width:1170px){
+         right: 0;
+   }
     }
     &_img {
       margin: 0 0 45px;

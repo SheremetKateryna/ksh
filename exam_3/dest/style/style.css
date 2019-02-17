@@ -567,6 +567,20 @@ a:hover {
   width: 293px;
   margin-bottom: 60px;
 }
+.button__up {
+  background-color: rgba(159, 154, 207, 0.5);
+  width: 84px;
+  height: 84px;
+  display: flex;
+  text-decoration: none;
+  border: none;
+  align-items: center;
+  color: #e6e6e6;
+  margin-left: auto;
+}
+.button__up:hover {
+  opacity: 0.8;
+}
 .about {
   padding: 80px 0 70px;
   color: #7d7a7c;

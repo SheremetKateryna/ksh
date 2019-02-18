@@ -521,12 +521,11 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #ffffff;
-  background: #ffffff;
+  background: #fefdfd;
   color: #9f9acf;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   line-height: 32px;
   font-size: 16px;
   font-weight: 400;
@@ -660,6 +659,7 @@ a:hover {
   background: #fff;
   width: 350px;
   justify-content: flex-end;
+  height: 350px;
 }
 .team_item {
   background: #fff;
@@ -668,6 +668,12 @@ a:hover {
   width: 260px;
   height: 258px;
   top: 10px;
+  position: absolute;
+}
+.team_bg {
+  height: 125px;
+  width: 100%;
+  background: #ebebeb;
 }
 .team_slider {
   display: flex;
@@ -703,7 +709,7 @@ a:hover {
   top: calc(50% - 60px);
   z-index: 99999;
 }
-@media (max-width: 1170px) {
+@media (max-width: 1171px) {
   .work_arrow-prev {
     left: 0;
   }
@@ -714,7 +720,7 @@ a:hover {
   top: calc(50% - 60px);
   z-index: 9999;
 }
-@media (max-width: 1170px) {
+@media (max-width: 1171px) {
   .work_arrow-next {
     right: 0;
   }

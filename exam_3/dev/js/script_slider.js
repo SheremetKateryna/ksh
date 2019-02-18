@@ -6,6 +6,18 @@
         arrows: true,
         nextArrow: '._nextArrowTeam',
         prevArrow: '._prevArrowTeam',
+        responsive: [{
+          breakpoint: 580,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 320,
+          settings: {
+            slidesToShow: 1,
+         }
+       }]
       });
 
       $('.work-slider').slick({
